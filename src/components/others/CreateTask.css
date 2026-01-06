@@ -1,0 +1,106 @@
+.TaskForm{
+    display: flex;
+    background-color: #1c1c1c;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+
+.TaskForm input{
+    background-color: #1c1c1c;
+    color: #d1d5db;
+    width:300%;
+    height:30px;
+    font-size: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border:1px solid #d1d5db;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+#description{
+    background-color: #1c1c1c;
+    border:1px solid #d1d5db;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #d1d5db;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 97%;
+}
+
+.TaskForm h3{
+    color: #d1d5db;
+}
+
+.TaskBlock1{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-shrink: 1;
+    width:15%;
+}
+
+.TaskBlock2{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    gap: 10px;
+    width:35%;
+}
+.TaskBlock2 button{
+    height:50px;
+    background-color:#10b981 ;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+}
+
+.TaskBlock2 button:hover{
+    background-color:#059669 ;
+    color: #d8dde6;
+    transform: scale(102%);
+}
+
+.TaskForm input[type='date']::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(289%) hue-rotate(175deg) brightness(94%) contrast(87%);
+    cursor: pointer; 
+}
+
+@media (max-width:725px) {
+    .TaskForm{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #description{
+        width: 50%;
+        font-size: 13px;
+    }
+    .TaskBlock1{
+        width:100%;
+    }
+
+    .TaskBlock2{
+        width:100%;
+    }
+    .TaskBlock2 button{
+        width:53%;
+    }
+    .TaskForm input{
+        font-size: 13px;
+        height:25px;
+        width:50%;
+    }
+    .TaskForm h3{
+        font-size: 16px;
+    }
+}

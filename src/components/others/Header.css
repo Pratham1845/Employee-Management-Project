@@ -1,0 +1,13 @@
+.HeadOut{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.HeadOut button{
+    height: 45px;
+    width:90px;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}

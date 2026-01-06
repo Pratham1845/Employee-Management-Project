@@ -1,0 +1,46 @@
+.AllTaskContainer {
+    background-color: #1c1c1c;
+    padding: 1.25rem;
+    margin-top: 1.3rem;
+    border-radius: 6px;
+}
+
+.AllTaskContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.GivenTask {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.GivenTask h3 {
+    width: 20%;
+}
+
+.empInfo {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #10b981;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.empInfo h3{
+    width:20%;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+@media (max-width: 725px) {
+    .GivenTask h3{
+        font-size: 16px;
+    }
+    .empInfo h3{
+        font-size: 16px;
+    }
+}

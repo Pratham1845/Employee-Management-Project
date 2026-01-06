@@ -1,0 +1,107 @@
+.TaskContainer {
+    min-height: fit-content;
+    margin-top: 35px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.TaskContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.Task {
+    height: 300px;
+    width: 300px;
+    padding: 1.4rem;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.TaskContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TaskContent h3 {
+    background-color: red;
+    height: 25px;
+    width: fit-content;
+    text-align: center;
+    padding: 2.5px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.TaskContent h4 {
+    font-size: 18px;
+}
+
+.Task h2 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.Task p {
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.AcceptTask {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.AcceptTask .complete {
+    background-color: #22c55e;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: none;
+    color: #fff;
+}
+
+.AcceptTask .Failed {
+    background-color: #ef4444;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: none;
+    color: #fff;
+}
+
+
+.NewTask button {
+    background-color: #facc15;
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: none;
+    color: #fff;
+}
+
+.CompletedTask button {
+    width: 100%;
+    background-color: #16a34a;
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: none;
+    color: #fff;
+}
+
+.FailedTask button{
+    width: 100%;
+    background-color: #dc2626;
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: none;
+    color: #fff;
+}
